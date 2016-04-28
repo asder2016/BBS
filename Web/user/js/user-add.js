@@ -63,7 +63,7 @@
                 $.ajax({
                     type: "post",
                     url: "ashx/Add.ashx",
-                    data: { "Action": "add", "Tname": name, "pwd": pwd, "realname": realname, "sex": adminSex },
+                    data: { "Action": "add", "Tname": Name, "Tpwd": Pwd, "Temail": realname, "sex": adminSex, "sex": adminSex, "sex": adminSex, "sex": adminSex, },
                     dataType: "text",
                     success: function (data) {
 
