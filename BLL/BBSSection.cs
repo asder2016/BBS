@@ -12,7 +12,7 @@ namespace BBS.BLL
 	/// </summary>
 	public partial class BBSSection
 	{
-		private readonly IBBSSection dal=DataAccess.CreateBBSSection();
+		private  readonly IBBSSection dal=DataAccess.CreateBBSSection();
 		public BBSSection()
 		{}
 		#region  BasicMethod
