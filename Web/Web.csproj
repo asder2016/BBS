@@ -203,7 +203,6 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
-    <Content Include="user\js\add.js" />
     <Content Include="user\js\user-add.js" />
     <Content Include="user\js\user-login.js" />
     <Content Include="user\user-login.html" />

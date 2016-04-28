@@ -40,11 +40,6 @@
         //点击注册按钮。获取登录名、密码、真实姓名。用弹出框显示出来。
         $("#btnSub").click(
             function () {
-
-                var name = $("#Uname").val();
-                var pwd = $("#Upwd").val();
-                var realname = $("#Ureal").val();
-
                var Name= $("#name").val();
                var Pwd= $("#pwd").val();
                var Email=$("#email").val();
@@ -57,13 +52,13 @@
                 //性别用布尔类型表示
                 var Sex= true;
                 var sexCheck = $('input:radio[name="Usex"]:checked').val();//得到单选按钮选中项的值
-                if (sexCheck == '女') { adminSex = false; }
+                if (sexCheck == '女') { Sex = false; }
 
                 //把数据传递到ashx文件里。然后把ashx回传的数据显示出来。
                 $.ajax({
                     type: "post",
                     url: "ashx/Add.ashx",
-                    data: { "Action": "add", "Tname": Name, "Tpwd": Pwd, "Temail": realname, "sex": adminSex, "sex": adminSex, "sex": adminSex, "sex": adminSex, },
+                    data: { "Action": "add", "Tname": Name, "Tpwd": Pwd, "Temail": Email, "Tbirthday": Birthday,"Tsex":Sex, "Tclass": Class, "Tstatement": Statement, "Tregdate": Regdate, "Tstate": State, "Tpoint": Point },
                     dataType: "text",
                     success: function (data) {
 
