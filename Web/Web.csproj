@@ -203,6 +203,11 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
+    <Content Include="user\js\add.js" />
+    <Content Include="user\js\user-add.js" />
+    <Content Include="user\js\user-login.js" />
+    <Content Include="user\user-login.html" />
+    <Content Include="user\user-register.html" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -210,6 +215,8 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Site.Mobile.Master" />
+    <Content Include="user\ashx\user-login.ashx" />
+    <Content Include="user\ashx\user-add.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -398,6 +405,12 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="user\ashx\user-add.ashx.cs">
+      <DependentUpon>user-add.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="user\ashx\user-login.ashx.cs">
+      <DependentUpon>user-login.ashx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

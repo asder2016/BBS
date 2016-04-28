@@ -15,12 +15,23 @@ namespace BBS.BLL
 		private readonly IBBSUsers dal=DataAccess.CreateBBSUsers();
 		public BBSUsers()
 		{}
-		#region  BasicMethod
+        #region  BasicMethod
+        /// <summary>
+        /// 用户登陆
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="pwd"></param>
+        /// <returns></returns>
+        public int userLogin(string username, string pwd)
+        {
+            return dal.userLogin(username, pwd);
+        }
+        /// <summary>
+        /// 得到最大ID
+        /// </summary>
 
-		/// <summary>
-		/// 得到最大ID
-		/// </summary>
-		public int GetMaxId()
+
+        public int GetMaxId()
 		{
 			return dal.GetMaxId();
 		}
