@@ -8,7 +8,7 @@ namespace BBS.Model
 	public partial class BBSReply
 	{
 		public BBSReply()
-		{}
+		{ }
 		#region Model
 		private int _rid;
 		private int _rtid;
